@@ -2,23 +2,42 @@
 Homework Week 1 - Code Refactor
 # <Horiseon-Code-Refactor-2022>
 
+## Site Link
+
+[www.horiseon.com](https://timp1990.github.io/HW-Wk1-CodeRefactor/)
+
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project improves upon the existing Horiseon website by making it more accessible and fixing bugs.
+The "client" supplied an existing html & css file for their website, which needed to have changes made to achieve the Acceptance Criteria
 
-- Motivation: Our client would like their website to be more accessible, and score higher in SEO
-- Why did you build this project: To make the Horiseon Website more accessible, and fulfill the needs of the client
-- What problem does it solve - It makes the website more accessible and easier to find on Search engines such as google
-- What did you learn - About website accessibility, how people with various disabilities intereact with websites, how google chrome makes two websites of each code (one for the GUI and one using the "accessibility tree")
+- Motivation: 
+Our client would like their website to be more accessible, and score higher in SEO
+- Why did you build this project: 
+To make the Horiseon Website more accessible, and fulfill the needs of the client
+- What problem does it solve: 
+It makes the website more accessible and easier to find on Search engines such as google
+- What did you learn: 
+About website accessibility, how people with various disabilities intereact with websites, how google chrome makes two websites of each code (one for the GUI and one using the "accessibility tree")
 
-## Table of Contents (Optional)
+## List of Fixes Conducted
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+1. Header tag replaces div class header
+2. Alt texts added to all img elements
+3. Website title changed to client name
+4. Nav bar changed from div to nav
+5. role and alt text added to "hero div" to provide alt text for banner image
+6. In div content the "online-reputation-management" and "social media marketing" had both class and id attributes. Deleted id to clean up.
+7. benefit-lead, benefit-cost and benefit-brand all defined in same curly brackets set to cleanup code. 
+Please note: this could have also been done by adding the margin-bottom and color items to the benefits class, 
+but the separate classes were left to allow for easy labelling of the divs
+8. Same as 7. but with benefit-lead img, benefit-cost img and benefit-brand img
+9. Benefits Section CSS put below Content Div CSS so that the html and CSS are in the ame order
+10. Same as 7. But for ".search-engine-optimization", ".online-reputation-management" and ".social-media-marketing"
+11. Same as 8. but with ".search-engine-optimization img", ".online-reputation-management img" and ".social-media-marketing img"
+12. Same as 11 but with "content img" and ".content h2"
+13. Anchor tags changed to take user down the page to correct section when the nav bar items are clicked.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
@@ -28,17 +47,19 @@ No steps are required, the website is live and ready to view
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The website mayy be accessed via a web browser. 
+An example of the site is shown in the image below.
+![Example Site](assets/images/screenshot.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+The items in the nav bar (in the tope right hand corner of the image above) may be clicked to scroll down to the appropriate part of the page.
 
 ## Credits
 
-None. However, did source a lot of information from Youtube & Google Searches
+- Tim Polo
+
+- USYD & Trilogy
+
+- Google Searches
 
 ## License
 
@@ -84,3 +105,4 @@ The website allows people to get information about the client's company and capa
 ## Tests
 
 None.
+
