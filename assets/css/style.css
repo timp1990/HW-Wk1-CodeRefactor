@@ -124,17 +124,14 @@ footer h2 {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    margin-bottom: 32px;
+    color: #ffffff
 }
 
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-.benefit-lead, .benefit-brand, .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
 }
 
 /* ID Selectors */
@@ -149,9 +146,8 @@ Note: All changes listed have had the corresponding html changes also
 4. Nav selector used instead of header div selector to clean up code
 5. no change to css only html
 6. no change to css only html
-7. benefit-lead, benefit-cost and benefit-brand all defined in same curly brackets set to cleanup code. 
-Please note: this could have also been done by adding the margin-bottom and color items to the benefits class, 
-but the separate classes were left to allow for easy labelling of the divs
+7. Unnecessary classes ""benefit-lead",  "benefit-brand" and "benefit-cost" deleted
+their style property statements (margin-bottom: 32px;    color: #ffffff) moved to the parent class (class="benefits")
 8. Same as 7. but with benefit-lead img, benefit-cost img and benefit-brand img
 9. Benefits Section CSS put below Content Div CSS so that the html and CSS are in the ame order
 10. Same as 7. But for ".search-engine-optimization", ".online-reputation-management" and ".social-media-marketing"
